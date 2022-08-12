@@ -1,0 +1,65 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Gun ve ay dogum tarihi sayılarla lutfen" +
+                "Gun:");
+        int a = scan.nextInt();
+        System.out.print("Ay:");
+        int b = scan.nextInt();
+
+        Mounh(a,b);
+
+
+    }
+
+    public static void Mounh(int FirstNumber, int SecondNumber) {
+        if(FirstNumber >= 21 && FirstNumber <=31 && SecondNumber ==3 || FirstNumber<=20 && SecondNumber == 4){
+            System.out.print("Koç Burcu");
+        }
+        if(FirstNumber >= 21 && FirstNumber <=30 && SecondNumber ==4 || FirstNumber<=21 && SecondNumber == 5){
+            System.out.print("Boga Burcu");
+        }
+        if(FirstNumber >= 22 && FirstNumber <=31 && SecondNumber ==5 || FirstNumber<=22 && SecondNumber == 6){
+            System.out.print("Ikizler Burcu");
+        }
+        if(FirstNumber >= 23 && FirstNumber <=30 && SecondNumber ==6 || FirstNumber<=22 && SecondNumber == 7){
+            System.out.print("Yengec Burcu");
+        }
+        if(FirstNumber <= 23 && FirstNumber <=31 && SecondNumber ==7 || FirstNumber<=22 && SecondNumber == 8){
+            System.out.print("Aslan Burcu");
+        }
+        if(FirstNumber >= 23 && FirstNumber <=31 && SecondNumber ==8 || FirstNumber<=20 && SecondNumber == 9){
+            System.out.print("Basak Burcu");
+        }
+        if(FirstNumber >= 23 && FirstNumber <=30 && SecondNumber ==9 || FirstNumber<=22 && SecondNumber == 10){
+            System.out.print("Terazi     Burcu");
+        }
+        if(FirstNumber >= 23 && FirstNumber <=31 && SecondNumber ==10 || FirstNumber<=21 && SecondNumber == 11){
+            System.out.print("Akrep Burcu");
+        }
+        if(FirstNumber >= 22 && FirstNumber <=30 && SecondNumber ==11 || FirstNumber<=21 && SecondNumber == 12){
+            System.out.print("Yay Burcu");
+        }
+        if(FirstNumber >= 22 && FirstNumber <=31 && SecondNumber ==12 || FirstNumber<=21 && SecondNumber == 1){
+            System.out.print("Oglak Burcu");
+        }
+        if(FirstNumber >= 22 && FirstNumber <=31 && SecondNumber ==1 || FirstNumber<=19 && SecondNumber == 2){
+            System.out.print("Kova Burcu");
+        }
+        if(FirstNumber >= 20 && FirstNumber <=30 && SecondNumber ==2 || FirstNumber<=20 && SecondNumber == 3){
+            System.out.print("Balık Burcu");
+        }
+
+
+
+
+    }
+
+
+
+}
